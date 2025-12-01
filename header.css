@@ -1,0 +1,85 @@
+/* ===== RESET TẤT CẢ ELEMENT ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== HEADER ===== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    background: #002147;
+}
+
+/* Logo và container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background: url("logo.png") center/contain no-repeat;
+    border-radius: 50%;
+    position: relative;
+}
+
+.logo .icon {
+    width: 28px;
+    height: 28px;
+    background: #ffcc00;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    user-select: none;
+}
+
+/* ===== MENU ===== */
+.menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    padding-bottom: 6px;
+    transition: 0.3s;
+    border-bottom: 3px solid transparent;
+}
+
+.menu a:hover, .menu .active {
+    color: #ffcc00;
+    border-bottom-color: #ffcc00;
+}
+
+/* ===== NÚT APPLY ===== */
+.apply-btn {
+    background: #ffcc00;
+    color: #002147;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.apply-btn:hover {
+    background: #e6b800; /* Hiệu ứng khi hover */
+}

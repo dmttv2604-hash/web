@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - ACADEMICS</title>
+
+    <!-- Icon + CSS ngoài -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        /* Màu chữ trắng cho menu trên header */
+        .menu li, .menu li a { color: white; }
+
+        /* Khung tổng Research */
+        .research-section {
+            max-width: 1200px;      /* Giới hạn chiều rộng */
+            margin: 0 auto;         /* Căn giữa trang */
+            padding: 50px 20px;     /* Tạo khoảng cách */
+            text-align: center;
+        }
+
+        /* Layout dạng lưới cho 3 card */
+        .research-grid {
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Nhỏ co, lớn giãn */
+            gap: 20px; 
+        }
+
+        /* Thẻ card từng Research */
+        .research-card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;              /* Bo góc */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: 0.3s ease;
+
+            text-align: center;
+
+            display: flex;                   /* Dùng Flex để nút nằm cùng hàng */
+            flex-direction: column;          /* Sắp xếp từ trên xuống */
+            justify-content: space-between;  /* Đẩy nút xuống cuối */
+            height: 100%;                    /* Giữ chiều cao đều nhau */
+        }
+
+        /* Đoạn mô tả đẩy giãn card cho đồng đều */
+        .research-card p {
+            color: #666;
+            flex-grow: 1;                    /* Lấp đầy không gian */
+        }
+
+        /* Nút Learn More */
+        .btn-details {
+            display: inline-block;
+            margin: 20px auto 0;             /* Căn giữa theo chiều ngang */
+            padding: 8px 20px;
+            background: #ff6600;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s ease;
+            white-space: nowrap;             /* Không xuống dòng */
+        }
+
+        /* Hover của nút */
+        .btn-details:hover { background: #e55a00; }
+
+        /* Responsive cho điện thoại */
+        @media (max-width: 768px) {
+            .research-section { padding: 30px 15px; }
+            .research-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo-container">
+            <div class="logo"></div>
+            <span class="logo-text">ACADEMICS</span>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li>COURSES</li>
+                <li><a class="active" href="research.html">RESEARCH</a></li>
+                <li>NEWS</li>
+                <li>GALLERY</li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <button class="apply-btn">APPLY NOW</button>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Our Research</h1>
+            <p>Discover innovative projects and breakthroughs.</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <section class="research-section">
+            <h2>Research Projects</h2>
+            <p class="sub-title">Advancing knowledge through cutting-edge studies.</p>
+
+            <div class="research-grid">
+
+                <!-- CARD 1 -->
+                <div class="research-card">
+                    <img src="ai.png" alt="AI in Education">
+                    <h3>AI in Education</h3>
+                    <p>Exploring how artificial intelligence enhances learning experiences.</p>
+                    <a class="btn-details">Learn More</a>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="research-card">
+                    <img src="nangluong.png" alt="Sustainable Energy">
+                    <h3>Sustainable Energy</h3>
+                    <p>Developing renewable solutions for a greener future.</p>
+                    <a class="btn-details">Learn More</a>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="research-card">
+                    <img src="data.png" alt="Data Science">
+                    <h3>Data Science</h3>
+                    <p>Analyzing big data for insights in various fields.</p>
+                    <a class="btn-details">Learn More</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
